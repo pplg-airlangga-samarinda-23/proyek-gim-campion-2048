@@ -29,6 +29,54 @@ hr{
     justify-content: center;
     align-items: center;
 }
+#Credits {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+}
+#Credits h1{ 
+    color: #333;
+}
+
+#Credits p {
+    color: #9e8c52;
+    font-size: 16px; 
+}
+
+#MainMenu {
+    background-color: #f9f9f9; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 50px;
+}
+
+#MainMenu button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#MainMenu button:hover {
+    background-color: #45a049;
+}
+
+.font{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
 
 .x2{
     background-color: #eee4da;

@@ -7,16 +7,74 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>2048</h1>
-    <hr>
-    <h2> Score : <span id="score">0</span></h2>
-    <div id="board">
-        <!-- <div class="tile x2">2</div>
-        <div class="tile x4">4</div>
-        <div class="tile x8">8</div>
-        -->
+    <div id="game" style="display: none;">
+        <h1>2048</h1>
+        <hr>
+        <h2> Score : <span id="score">0</span></h2>
+        <div id="board"></div>
+        <button id="Cetak" onclick=" return cetakHighScore();"> Cetak highScore </button>
+    </div>
+    <div id="Credits" style="display: none;">
+        <h1> DIBUAT OLEH </h1>
+        <p> Putra ari pratama</p>
+        <p> Yoga axel baim pratama</p>
+        <p> Muhammad syifa zai al ghani</p>
+        <button id="Menu" onclick="return ahaw('MainMenu', 'Credits');"> Kembali ke main menu </button>
+    </div>
+    <div id="LeaderBoards" style="display: none;">
+        <h1> LeaderBoard </h1>
+        <div id="output"></div>
+        <button id="back" onclick="return ahaw('MainMenu', 'LeaderBoards');"> kembali ke menu utama </button>
 
     </div>
+
+
+
+
+    <div id="MainMenu">
+        <h1> Welcome to Game 2048 </h1>
+        <div id="Play">  
+            <button  onclick="return ahaw('game', 'MainMenu');"> Play Game </button>
+        </div>
+        <br>
+        <div id="LeaderBoard">
+            <button onclick="return ahaw('LeaderBoards', 'MainMenu');"> LeaderBoard </button>    
+        </div> 
+        <br>
+        <div id="credit"> 
+            <button onclick="return ahaw('Credits', 'MainMenu');"> Credits </button>
+        </div>
+    </div>
+
+
+      <script>
+
+
+
+        function ahaw(show, hidden) {
+            document.getElementById(show).style.display='block';
+            document.getElementById(hidden).style.display='none';
+            return false;
+        }   
+
+        function cetakHighScore() {
+            let outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = "";  // Kosongkan output sebelumnya
+            let huruf = 'player';
+
+            // Menggunakan loop for untuk mencetak angka dan huruf
+            for (let i = 1; i <= 5; i++) {
+                outputDiv.innerHTML += i + " - " + huruf[i - 1] + "<br>";  // Menampilkan angka dan huruf
+            }
+            ahaw('LeaderBoards', 'game');  // Tampilkan leaderboard setelah mencetak
+            return false;
+
+
+        }
+
+
+
+      </script>
 </body>
 </html>
 
