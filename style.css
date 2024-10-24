@@ -29,46 +29,77 @@ hr{
     justify-content: center;
     align-items: center;
 }
-#Credits {
+body {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
     background-color: #f0f0f0;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 50px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-#Credits h1{ 
+
+h1 {
+    font-size: 3em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2em;
     color: #333;
 }
 
-#Credits p {
-    color: #9e8c52;
-    font-size: 16px; 
-}
-
 #MainMenu {
-    background-color: #f9f9f9; 
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    margin: 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px;
 }
 
-#MainMenu button {
-    background-color: #4CAF50;
-    color: white;
+#Play, #LeaderBoard, #credit {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #28a745;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 4px 2px;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
-#MainMenu button:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #218838;
+}
+
+#Credits {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px;
+}
+
+.font {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #333;
+}
+
+strong {
+    font-weight: bold;
 }
 
 .font{

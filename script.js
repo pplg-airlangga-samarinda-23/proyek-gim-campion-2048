@@ -21,6 +21,7 @@ function setGame() {
     //     [8192,0,0,0]
     // ]
 
+
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
 
@@ -225,3 +226,4 @@ function printHighscores() {
     storageArray.push(userInitials, highScore);
     console.log(storageArray)
 } 
+
